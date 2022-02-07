@@ -1,9 +1,12 @@
 :root {
    --heading-font-family: 'Lora', serif;
     --default-font-family: 'Poppins', sans-serif;
-    --hero-color: #F9F7FE;
     --branding-color: #6C63FF;
     --secondary-color: #F9F7FE;
+}
+
+body {
+    font-family: var(--default-font-family);
 }
 h1, h2, h3, h4, h5, h6 {
     color: black;
@@ -16,7 +19,6 @@ h1 {
 }
 
 p{
-    font-family: var(--default-font-family);
     font-weight: normal;
 }
 
@@ -30,6 +32,7 @@ p{
     font-size: 36px;
     font-weight: bold;
     margin: 0;
+    color: #272142;
 }
 
 .hero h2 {
@@ -38,6 +41,7 @@ p{
     font-size: 24px;
     line-height: 2;
     color: #272142;
+
 }
 
 .btn-branding {
