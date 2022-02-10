@@ -1,51 +1,64 @@
 :root {
    --heading-font-family: 'Lora', serif;
     --default-font-family: 'Poppins', sans-serif;
-    --branding-color: #6C63FF;
+    --branding-color: #A10853;
     --secondary-color: #F9F7FE;
+    --paragraph-color: #F9F7FE;
 }
 
 body {
     font-family: var(--default-font-family);
+    background-color: rgba(0,0,0,0.95);
+    
 }
 h1, h2, h3, h4, h5, h6 {
-    color: black;
+    color: var(--secondary-color);
     font-family: var(--heading-font-family);
     font-weight: bold;
 }
 
 h1 {
     font-size: 96px;
+    opacity: 90%;
 }
 h2{
-    font-size: 64pz;
+    font-size: 64px;
 }
 
 p{
     font-weight: normal;
     font-size: 16px;
+    line-height: 1.7;
+    color: var(--paragraph-color);
+    opacity: 75%;
 }
 
-.hero {
-    background: var(--secondary-color);
+.hero-image {
+    background-image:  linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('/images/pink-leaf.jpg');
+    height: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 730px;
+    
+}
+.hero-text {
     text-align: center;
-    padding: 160px 20px;
+    padding: 150px 20px;
 }
-
-.hero p {
+.hero-text p {
     font-size: 36px;
     font-weight: bold;
     margin: 0;
-    color: #272142;
+    opacity: 75%;
 }
 
-.hero h2 {
+.hero-text h2 {
     font-family: var(--default-font-family);
     font-weight: normal;
     font-size: 24px;
     line-height: 2;
-    color: #272142;
-
+    color: var(--secondary-color);
+    opacity: 75%;
 }
 
 .btn-branding {
@@ -55,10 +68,11 @@ p{
     font-size: 18px;
     line-height: 27px;
     padding: 18px 48px;
+    margin-top: 140px;
 }
 .btn-branding:hover {
-    background: var(--secondary-color);
-    color: var(--branding-color);
+    background: none;
+    color: var(--secondary-color);
     border: 2px solid var(--branding-color);
 }
 
@@ -74,5 +88,25 @@ p{
 .btn-branding-outline:hover {
     background-color: var(--branding-color);
     color: var(--secondary-color)
+}
 
+.description-paragraph {
+    opacity: 70%;
+    line-height: 30px;
+}
+
+@media(max-width:786px) {
+   h1 {
+       font-size: 48px;
+   }
+   .hero-image {
+    background-image:  linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('/images/pink-leaf.jpg');
+    height: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 730px;
+    
+}
+     
+    }
 }
