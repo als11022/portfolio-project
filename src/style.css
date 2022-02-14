@@ -3,7 +3,6 @@
     --default-font-family: 'Poppins', sans-serif;
     --branding-color: #A10853;
     --secondary-color: #F9F7FE;
-    --paragraph-color: #F9F7FE;
 }
 
 body {
@@ -22,24 +21,23 @@ h1 {
     opacity: 90%;
 }
 h2{
-    font-size: 64px;
+    font-size: 48px;
 }
 
 p{
     font-weight: normal;
     font-size: 16px;
     line-height: 1.7;
-    color: var(--paragraph-color);
+    color: var(--secondary-color);
     opacity: 75%;
 }
 
 .hero-image {
-    background-image:  linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('/images/pink-leaf.jpg');
+    background-image:  linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/images/pink-leaf-resize.jpg');
     height: 5%;
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 730px;
-    
 }
 .hero-text {
     text-align: center;
@@ -67,8 +65,8 @@ p{
     color: var(--secondary-color);
     font-size: 18px;
     line-height: 27px;
-    padding: 18px 48px;
-    margin-top: 140px;
+    padding: 15px 30px;
+
 }
 .btn-branding:hover {
     background: none;
@@ -90,23 +88,29 @@ p{
     color: var(--secondary-color)
 }
 
+.contact-btn {
+    margin-top: 100px;
+}
+
 .description-paragraph {
     opacity: 70%;
     line-height: 30px;
 }
 
-@media(max-width:786px) {
+.project-description {
+    padding: 50px 30px;
+}
+
+
+@media(max-width:992px) {
    h1 {
        font-size: 48px;
    }
-   .hero-image {
-    background-image:  linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('/images/pink-leaf.jpg');
-    height: 5%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-height: 730px;
-    
-}
-     
-    }
+   .project-header {
+       font-size: 48px;
+   }
+   .project-description {
+       padding: 0;
+       text-align: center;
+   }
 }
