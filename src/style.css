@@ -1,13 +1,13 @@
 :root {
    --heading-font-family: 'Lora', serif;
     --default-font-family: 'Poppins', sans-serif;
-    --branding-color: #a10852;
-    --secondary-color: #F9F7FE;
+    --branding-color: #434565;
+    --secondary-color: rgb(249, 247, 254, 0.90);
 }
 
 body {
     font-family: var(--default-font-family);
-    background-color: rgba(0,0,0,0.95);
+    background-color: rgba(101, 108, 112, 0.75);
     
 }
 h1, h2, h3, h4, h5, h6 {
@@ -29,15 +29,14 @@ p{
     font-size: 16px;
     line-height: 1.7;
     color: var(--secondary-color);
-    opacity: 75%;
 }
 
 .hero-image {
-    background-image:  linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/images/pink-leaf-resize.jpg');
+    background-image:  linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/images/ocean.jpg');
     height: 5%;
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 730px;
+    max-height: 750px;
 }
 .hero-text {
     text-align: center;
@@ -56,7 +55,7 @@ p{
     font-size: 24px;
     line-height: 2;
     color: var(--secondary-color);
-    opacity: 75%;
+    opacity: 80%;
 }
 
 .btn-branding {
@@ -76,7 +75,7 @@ p{
 
 .btn-branding-outline {
     border-radius: 4px;
-    color: var(--branding-color);
+    color: var(--secondary-color);
     border: 2px solid var(--branding-color);
     font-size: 18px;
     line-height: 27px;
@@ -93,12 +92,15 @@ p{
 }
 
 .description-paragraph {
-    opacity: 70%;
     line-height: 30px;
 }
 
 .project-description {
     padding: 50px 30px;
+}
+
+.project-description h2 {
+    color: var(--branding-color);
 }
 .content-container {
     padding: 150px 20px;
@@ -133,6 +135,36 @@ p{
     font-size: 14px;
 }
 
+.logo {
+    max-height: 40px;
+}
+
+nav {
+    padding: 10px 0;
+}
+
+nav ul {
+    margin: 0;
+
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    line-height: 42px;
+    margin-left: 20px
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all 125ms ease-in-out;
+}
+
+nav a:hover, nav li.active a {
+    color: var(--branding-color);
+}
 
 
 @media(max-width:992px) {
@@ -149,5 +181,9 @@ p{
    .about-section {
        text-align: center;
        padding: 0;
+   }
+
+   nav a {
+       font-size: 14px;
    }
 }
