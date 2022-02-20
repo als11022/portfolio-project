@@ -25,7 +25,7 @@ h2{
     font-size: 48px;
 }
 
-h4 {
+h3 {
     font-size: 48px;
 }
 p{
@@ -110,7 +110,7 @@ p{
     color: var(--branding-color);
 }
 .content-container {
-    padding: 150px 20px;
+    padding: 130px 20px;
 }
 .content-container h1 {
     font-size: 64px;
@@ -133,13 +133,14 @@ p{
 
 .content h3 {
     font-family: var(--default-font-family);
-    font-size: 24px;
+    font-size: 30px;
     margin: 20px 0 0;
     line-height: 1.5;
+    color: var(--branding-color);
 }
 
 .content p {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .logo {
@@ -176,6 +177,10 @@ footer {
     margin: 60px 0;
 }
 
+.contact-footer {
+    margin: 0px;
+}
+
 footer .contact-box {
     background-color: var(--background-box-color);
     padding: 30px 120px;
@@ -210,11 +215,21 @@ footer .social-links a:hover {
     background-color: var(--secondary-color);
 }
 
+footer .repository-link {
+    color: var(--branding-color);
+    text-decoration: none;
+}
+
+footer .repository-link:hover {
+    text-decoration: underline;
+}
+
+
 @media(max-width:992px) {
    h1 {
        font-size: 48px;
    }
-   h4 {
+   h3 {
        font-size: 30px;
    }
    nav a {
@@ -235,7 +250,7 @@ footer .social-links a:hover {
        margin: 0;
        padding: 30px;
    }
-   footer h4, p {
+   footer h3, p {
        text-align: center;
    }
    footer .btn {
